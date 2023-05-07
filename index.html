@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="avatar-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+      
+        <label for="favorite-color">Favorite color:</label>
+        <input type="color" id="favorite-color" name="favorite-color"><br>
+      
+        <label for="favorite-animal">Favorite animal:</label>
+        <select id="favorite-animal" name="favorite-animal">
+          <option value="lion">Lion</option>
+          <option value="tiger">Tiger</option>
+          <option value="bear">Bear</option>
+        </select><br>
+      
+        <label for="favorite-food">Favorite food:</label>
+        <input type="text" id="favorite-food" name="favorite-food"><br>
+      
+        <label for="hobby">Hobby:</label>
+        <input type="text" id="hobby" name="hobby"><br>
+      
+        <label for="personality-trait">Personality trait:</label>
+        <input type="text" id="personality-trait" name="personality-trait"><br>
+      
+        <label for="lucky-number">Lucky number:</label>
+        <input type="number" id="lucky-number" name="lucky-number"><br>
+      
+        <label for="birth-month">Birth month:</label>
+        <select id="birth-month" name="birth-month">
+          <option value="jan">January</option>
+          <option value="feb">February</option>
+          <option value="mar">March</option>
+          <option value="apr">April</option>
+          <option value="may">May</option>
+          <option value="jun">June</option>
+          <option value="jul">July</option>
+          <option value="aug">August</option>
+          <option value="sep">September</option>
+          <option value="oct">October</option>
+          <option value="nov">November</option>
+          <option value="dec">December</option>
+        </select><br>
+      
+        <label for="birth-year">Birth year:</label>
+        <input type="number" id="birth-year" name="birth-year"><br>
+      
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender-male" name="gender" value="male">
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" name="gender" value="female">
+        <label for="gender-female">Female</label><br>
+        <input type="radio" id="gender-X" name="gender" value="x">
+        <label for="gender-X">X</label><br>
+        <button type="button" onclick="generateAvatar()">Generate Avatar</button>
+      </form>
+      
+      <div id="avatar-container"></div>    
+      <script src="./js/avatarmakers.js"></script>
+</body>
+</html>

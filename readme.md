@@ -41,3 +41,7 @@ This function takes in a gender and returns an emoji based on that gender. If th
 ### Function: getLuckyNumberEmoji(luckyNumber)
 
 This function takes in a lucky number and returns an emoji based on that number. If the input is not a valid lucky number, it returns an empty string.
+
+## Simple-demo-form
+
+In this folder you can find a simple demo how to handle and use form data.

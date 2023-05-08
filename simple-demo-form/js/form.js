@@ -1,5 +1,5 @@
-const form = document.getElementById('signup-form');
-const userList = document.getElementById('user-list');
+const form = document.querySelector('.signup-form');
+const userList = document.querySelector('.user-list');
 
 // Load existing users from local storage
 let users = JSON.parse(localStorage.getItem('users')) || [];
@@ -7,6 +7,7 @@ let users = JSON.parse(localStorage.getItem('users')) || [];
 // Render existing users on page load
 users.forEach(user => {
   const li = document.createElement('li');
+  li.classList.add('user-list__item');
   li.textContent = `${user.name} (${user.email})`;
   userList.appendChild(li);
 });
@@ -25,6 +26,7 @@ form.addEventListener('submit', event => {
 
   // Add user to list on page
   const li = document.createElement('li');
+  li.classList.add('user-list__item');
   li.textContent = `${user.name} (${user.email})`;
   userList.appendChild(li);
 
